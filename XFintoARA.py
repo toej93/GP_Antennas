@@ -2,19 +2,12 @@
 
 #Translate XF output into readable AraSim input. Jorge Torres, Sep 2017.
 
-
 import math
 import itertools
 import sys
 import shutil
 import numpy
 import glob
-
-#n = sys.argv[1]; #If needed, first argument taken by Python.
-# Open file
-path = "/Users/neutrino/Dropbox/GP_Antennas/OSU_internal/Dipole_FreqSweep/*.uan"
-for fname in glob.glob(path):
-    print(fname)
 
 input_file = "pattern.uan"#+str(n) #Name of the input file
 output_file ="evol_antenna_model.dat"
