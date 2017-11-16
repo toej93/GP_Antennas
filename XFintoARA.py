@@ -24,7 +24,7 @@ patt = open(output_file, "w+")
 while (freq<=freq_max): 
     input_file = "/Users/neutrino/Dropbox/GP_Antennas/OSU_internal/Dipole_FreqSweep/dipole_"+str(freq)+"_MHz.uan" #+str(n) #Name of the input file. Need to modify with your directory path
     print(input_file) #Prints the name of the input file
-    patt.write("freq:"+str(freq)+".00 MHz"+'\n'+"SWR : 1.965000"+'\n')#Header for each iteration
+    patt.write("freq : "+str(freq)+".00 MHz"+'\n'+"SWR : 1.965000"+'\n')#Header for each iteration
     if(freq==freq_min):
         patt.write(" Theta "+'\t'+" Phi "+'\t'+" Gain(dB)     "+'\t'+"   Gain     "+'\t'+"    Phase(deg)"+'\n')#Header
     with open(input_file, 'r') as f:
