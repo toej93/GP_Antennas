@@ -1,6 +1,6 @@
- Theta 	 Phi 	 Gain(dB)     	   Gain     	    Phase(deg)
 freq:100.00 MHz
 SWR : 1.965000
+ Theta 	 Phi 	 Gain(dB)     	   Gain     	    Phase(deg)
 0 	 0 	 -300.0     	   1e-30     	    140.4108
 0 	 15 	 -300.0     	   1e-30     	    140.4113
 0 	 30 	 -300.0     	   1e-30     	    140.4116
