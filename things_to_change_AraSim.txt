@@ -11,4 +11,4 @@ params.freq_init = 83.333;
 
 The original AraSim file has 60 frequencies, starting at 83.333 MHz, with a step of 16.667 MHz. You have to modify the values of the previous parameters depending on your input file.
 
-Besides modifying this parameters, one has to change the name of the input file(s) that is(are) going to be used. The original AraSim input files are named ARA_bicone6in_output.txt and ARA_dipoletest_output1.txt for Hpol and Vpol, respectively.
+Besides modifying this parameters, one has to change the name of the input file(s) that is(are) going to be used. The original AraSim input files are named ARA_bicone6in_output.txt and ARA_dipoletest_output1.txt for Vpol and Hpol, respectively.
