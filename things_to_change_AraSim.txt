@@ -1,0 +1,14 @@
+Look for line 99-103 in Detector.cc. They should look similar to these:
+params.freq_step = 60                                                      
+params.ang_step = 2664;                                                   
+params.freq_width = 16.667;                                                 
+params.freq_init = 83.333;                                                  
+
+-“params.freq_step” accounts for the number of different frequencies that your file has. 
+-“params.ang_step” tells the number of different angles that the file has for a single frequency. In this case (180/5+1)*(360/5)=2664 (note that the angle step is 5). This is very standard.
+-params.freq_width is the frequency step in MHz.
+-params.freq_init accounts for the initial frequency in MHz.
+
+The original AraSim file has 60 frequencies, starting at 83.333 MHz, with a step of 16.667 MHz. You have to modify the values of the previous parameters depending on your input file.
+
+Besides modifying this parameters, one has to change the name of the input file(s) that is(are) going to be used. The original AraSim input files are named ARA_bicone6in_output.txt and ARA_dipoletest_output1.txt for Hpol and Vpol, respectively.
